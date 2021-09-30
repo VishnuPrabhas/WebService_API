@@ -1,0 +1,16 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "Movies_API with Node JS",
+  "main": "demo.js",
+  "scripts": {
+    "start": "node demo.js"
+    
+  },
+  "author": "Vishnu_Prabhas",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "json-server": "^0.16.3"
+  }
+}
