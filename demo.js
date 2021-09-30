@@ -7,14 +7,14 @@ const app = express();
 app.use(express.json());
 
 const movies = {
-    "Movies": [
+    "Movies" : [
       {
         "ID": 1,
         "Name": "Interstellar",
         "Director": "Christopher Nolan",
         "Wiki": "https://en.wikipedia.org/wiki/Christopher_Nolan",
         "Description": "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.",
-        "IMDB Rating": 8.6      
+        "IMDB Rating": 8.6  
         
       },
 
@@ -69,7 +69,7 @@ app.get('/movies', (req, res) => {
     res.send(movies);
 });
 
-// /api/courses/1
+// /movies/n
 app.get('/movies/:ID', (req, res) => {
     let movies = movies.find(c => c.id === parseInt(req.params.id));
     if (!movies) res.status(404).send('The movie with the given ID was not found.');
